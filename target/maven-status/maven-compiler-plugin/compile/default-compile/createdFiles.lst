@@ -1,0 +1,7 @@
+com\twitterfeeds\exceptions\CharacterLengthException.class
+com\twitterfeeds\service\TweetServiceImpl.class
+com\twitterfeeds\service\TweetService.class
+com\twitterfeeds\resource\TwitterResults.class
+com\twitterfeeds\exceptions\FileNotFoundException.class
+test\java\com\twitterfeeds\service\TweetServiceImplTest.class
+com\twitterfeeds\config\properties\ConfigVariables.class

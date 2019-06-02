@@ -106,7 +106,7 @@ public class TweetServiceImplTest {
         twitterUsers.add(user2);
         twitterUsers.add(user3);
         List expResult = twitterUsers;
-        List result = instance.getListOfTwiterUsers(userFile);
+        List result = instance.getListOfTwitterUsers(userFile);
         assertEquals(expResult.size(), result.size());
     }
 

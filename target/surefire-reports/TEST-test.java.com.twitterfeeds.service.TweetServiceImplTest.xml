@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.097" errors="0" skipped="0" tests="3" name="test.java.com.twitterfeeds.service.TweetServiceImplTest">
+<testsuite failures="0" time="0.088" errors="0" skipped="0" tests="3" name="test.java.com.twitterfeeds.service.TweetServiceImplTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\bin"/>
@@ -14,9 +14,8 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="test" value="${packageClassName}"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\nmbete\gitMay31\twitterFeeds"/>
+    <property name="user.dir" value="C:\Users\nmbete\git\twitterFeeds"/>
     <property name="java.runtime.version" value="1.7.0_79-b15"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_79\jre\lib\endorsed"/>
@@ -44,7 +43,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_79\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=${packageClassName} test-compile surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,7 +60,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.022" classname="test.java.com.twitterfeeds.service.TweetServiceImplTest" name="testDisplayTwitterFeeds"/>
-  <testcase time="0" classname="test.java.com.twitterfeeds.service.TweetServiceImplTest" name="testGetListOfTwiterUsers"/>
+  <testcase time="0.021" classname="test.java.com.twitterfeeds.service.TweetServiceImplTest" name="testDisplayTwitterFeeds"/>
+  <testcase time="0.002" classname="test.java.com.twitterfeeds.service.TweetServiceImplTest" name="testGetListOfTwiterUsers"/>
   <testcase time="0" classname="test.java.com.twitterfeeds.service.TweetServiceImplTest" name="testGetListOfTweets"/>
 </testsuite>

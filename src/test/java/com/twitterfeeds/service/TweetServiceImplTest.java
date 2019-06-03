@@ -1,8 +1,8 @@
 package test.java.com.twitterfeeds.service;
 
 import com.twitterfeeds.config.properties.ConfigVariables;
-import com.twitterfeeds.model.Tweets;
-import com.twitterfeeds.model.Users;
+import com.twitterfeeds.model.Tweet;
+import com.twitterfeeds.model.User;
 import com.twitterfeeds.service.TweetServiceImpl;
 import java.io.File;
 import java.util.ArrayList;
@@ -45,15 +45,15 @@ public class TweetServiceImplTest {
         TweetServiceImpl instance = new TweetServiceImpl();
         List<String> listOfTweets = new ArrayList<>();
         
-        Tweets tweet1 = new Tweets();
-        Tweets tweet2 = new Tweets();
-        Tweets tweet3 = new Tweets();
-        List<Tweets> twitterUsers = new ArrayList<>();
+        Tweet tweet1 = new Tweet();
+        Tweet tweet2 = new Tweet();
+        Tweet tweet3 = new Tweet();
+        List<Tweet> twitterUsers = new ArrayList<>();
         
         tweet1.setTweetFeed("Alan> If you have a procedure with 10 parameters, you probably missed some.");
         tweet1.setTweetId(1);
         tweet1.setTweets(listOfTweets);
-        Users user1 = new Users();
+        User user1 = new User();
         user1.setUserId(1);
         user1.setUsername("Alan");
         tweet1.setUsers(user1);
@@ -61,7 +61,7 @@ public class TweetServiceImplTest {
         tweet2.setTweetFeed("Ward> There are only two hard things in Computer Science: cache invalidation, naming things and off-by-1 errors.");
         tweet2.setTweetId(1);
         tweet2.setTweets(listOfTweets);
-        Users user2 = new Users();
+        User user2 = new User();
         user1.setUserId(3);
         user1.setUsername("Ward");
         tweet1.setUsers(user2);
@@ -70,7 +70,7 @@ public class TweetServiceImplTest {
         tweet3.setTweetFeed("Alan> If you have a procedure with 10 parameters, you probably missed some.");
         tweet3.setTweetId(1);
         tweet3.setTweets(listOfTweets);
-        Users user3 = new Users();
+        User user3 = new User();
         user3.setUserId(1);
         user3.setUsername("Alan");
         tweet3.setUsers(user3);
@@ -92,10 +92,10 @@ public class TweetServiceImplTest {
         System.out.println("getListOfTwiterUsers");
         File userFile = new File(ConfigVariables.USERFILENAMELOCATION);
         TweetServiceImpl instance = new TweetServiceImpl();
-        Users user1 = new Users();
-        Users user2 = new Users();
-        Users user3 = new Users();
-        List<Users> twitterUsers = new ArrayList<>();
+        User user1 = new User();
+        User user2 = new User();
+        User user3 = new User();
+        List<User> twitterUsers = new ArrayList<>();
         user1.setUserId(1);
         user1.setUsername("Alan");
         user2.setUserId(2);

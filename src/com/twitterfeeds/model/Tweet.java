@@ -2,11 +2,11 @@ package com.twitterfeeds.model;
 
 import java.util.ArrayList;
 import java.util.List;
-public class Tweets {
+public class Tweet {
     private Integer tweetId;
     private String tweetFeed;
-    private Users users;
-    private List<Tweets> tweets;
+    private User users;
+    private List<Tweet> tweets;
 
     public Integer getTweetId() {
         return tweetId;
@@ -24,25 +24,25 @@ public class Tweets {
         this.tweetFeed = tweetFeed;
     }
 
-    public Users getUsers() {
+    public User getUsers() {
         return users;
     }
 
-    public void setUsers(Users users) {
+    public void setUsers(User users) {
         this.users = users;
     }
     
-    public List<Tweets> getTweets() {
+    public List<Tweet> getTweets() {
        return tweets;
     }
     
      public void setTweets(List<String> listOfTweets) {
-        List<Tweets> listTweets = new ArrayList<>();
+        List<Tweet> listTweets = new ArrayList<>();
         for (int i = 0; i < listOfTweets.size(); i++) {
-            Tweets tweet = new Tweets();
+            Tweet tweet = new Tweet();
             tweet.setTweetId(i + 1);
             tweet.setTweetFeed(listOfTweets.get(i));
-            Users user = new Users();
+            User user = new User();
             String[] userNameList = listOfTweets.get(i).split(">");
             user.setUserId(tweet.getTweetId());
             user.setUsername(userNameList[0]);

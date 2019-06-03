@@ -2,10 +2,10 @@ package com.twitterfeeds.model;
 
 import java.util.ArrayList;
 import java.util.List;
-public class Users {
+public class User {
     private Integer userId;
     private String username;
-    List<Users> followers;
+    List<User> followers;
 
     public Integer getUserId() {
         return userId;
@@ -23,14 +23,14 @@ public class Users {
         this.username = username;
     }
     
-    public List<Users> getFollowers() {
+    public List<User> getFollowers() {
         return followers;
     }
 
     public void setFollowers(List<String> listOfTwitterUsers) {
-        List<Users> twitterUsers = new ArrayList<>();
+        List<User> twitterUsers = new ArrayList<>();
         for (int i = 0; i < listOfTwitterUsers.size(); i++) {
-            Users user = new Users();
+            User user = new User();
             user.setUserId(i + 1);
             user.setUsername(listOfTwitterUsers.get(i));
             twitterUsers.add(user);

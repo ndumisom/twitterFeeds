@@ -1,20 +1,20 @@
 package com.twitterfeeds.service;
 
-import com.twitterfeeds.model.Tweets;
-import com.twitterfeeds.model.Users;
+import com.twitterfeeds.model.Tweet;
+import com.twitterfeeds.model.User;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 public abstract class TweetService {
 
-    public List<Tweets> getListOfTweets(File tweetsFile) throws IOException {
+    public List<Tweet> getListOfTweets(File tweetsFile) throws IOException {
         
-        List<Tweets> listOfTweets = null;
+        List<Tweet> listOfTweets = null;
         return listOfTweets;
     }
 
-    public List<Users> getListOfTwitterUsers(File userFile) throws IOException {
-        List<Users> listOfTwiterUsers = null;
+    public List<User> getListOfTwitterUsers(File userFile) throws IOException {
+        List<User> listOfTwiterUsers = null;
         return listOfTwiterUsers;
     }
 
